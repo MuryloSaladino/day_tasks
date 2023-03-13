@@ -6,9 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
     <title>My Tasks</title>
 </head>
-<body>
-    
+<body id="whole-page" class="default-text">
+
+    <header id="top-page">
+
+        <h1 id="logo">MY TASKS</h1>
+        <nav>
+            <input class="inputs" type="text" placeholder="Pesquisar Tarefa">
+        </nav>
+
+    </header>
+
+    <main id="main-content">
+
+        <section id="task-section1">
+            <form id="task-form">
+
+                <h2>Inserir Tarefa</h2>
+
+                <div id="input-div">
+                    <input class="inputs" type="text" required placeholder="Qual a tarefa?">
+
+                    <select class="inputs" name="type" id="importance-level" required>
+                        <option class="option" value="" selected>Nível de Importância</option>
+                        <option class="option" value="1">Importante</option>
+                        <option class="option" value="2">Urgente</option>
+                        <option class="option" value="3">Prioridade</option>
+                        <option class="option" value="4">Vida ou Morte</option>
+                    </select>
+                </div>
+
+                <button id="submit-task" type="submit">Adicionar Tarefa</button>
+
+            </form>
+        </section>
+
+        <section id="task-section2">
+            <h2>Tarefas</h2>
+            <div id="task-list"></div>
+        </section>
+
+    </main>
+
 </body>
 </html>
