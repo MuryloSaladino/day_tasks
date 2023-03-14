@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     align-self: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #task-section1   {
@@ -56,19 +56,19 @@
     width: 90%;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #input-div  {
     width: 90%;
     margin: 20px 0;
-    align-self: center;
     display: flex;
     justify-content: space-between;
 }
 
 #submit-task    {
     width: 90%;
-    align-self: center;
     height: 50px;
     border: 0;
     border-radius: 10px;
@@ -84,12 +84,15 @@
     border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
 #task-list  {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -108,6 +111,7 @@
 .inputs::placeholder    {
     font-size: 15px;
     font-weight: 300;
+    color: black;
 }
 
 .option {
@@ -118,8 +122,52 @@
 
 .tasks  {
     background-color: rgba(229, 228, 226, 0.4); 
-    width: 100%;
+    width: 80%;
+    margin: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.trash  {
+    height: 25px;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.2s;
+}
+.trash:hover    {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.title-section  {
+    font-size: 30px;
+}
+
+.span-0 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+}
+
+.span-1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(255, 0, 0);
+}
+
+.span-2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(255, 128, 44);
+}
+
+.span-3 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(0, 255, 0, 1);
 }
