@@ -1,5 +1,5 @@
 import { renderTasks, taskList } from "./render.js";
-import { v4 as uuidv4 } from "../../node_modules/uuid/dist/esm-browser/index.js";
+import { v4 as uuidv4 } from "uuid";
 
 function getPreviousTasks() {
     const previousTasks = JSON.parse(localStorage.getItem("taskList"))
