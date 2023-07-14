@@ -1,0 +1,55 @@
+#task-list{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tasks{
+    min-height: 75px;
+    width: 100%;
+    
+    background-color: var(--color-grey-1); 
+    padding: 20px 60px;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    position: relative;
+    transition: 0.2s;
+}
+
+
+.trash{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.trash:hover{
+    color: var(--color-red);
+}
+
+.priority-level{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+.level-0{
+    color: var(--color-priority-max);
+}
+.level-1{
+    color: var(--color-red);
+}
+.level-2{
+    color: var(--color-yellow);
+}
+.level-3{
+    color: var(--color-green);
+}
