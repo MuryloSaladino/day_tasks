@@ -16,6 +16,21 @@
 </head>
 <body class="default-text">
 
+    <dialog id="edit-task">
+        <form id="edit-task-form">
+            <i id="close-modal" class="material-symbols-outlined">close</i>
+            <input id="edit-task-title" class="inputs" type="text" placeholder="Nome da tarefa" autocomplete="off" required>
+            <select id="edit-importance-level" class="inputs" name="type" required>
+                <option class="option" value="3">Importante</option>
+                <option class="option" value="2">Urgente</option>
+                <option class="option" value="1">Prioridade</option>
+                <option class="option" value="0">Vida ou Morte</option>
+            </select>
+            <textarea id="edit-task-description" placeholder="Descrição (opcional)" class="textarea"></textarea>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </dialog>
+
     <header id="top-page">
         <h1 id="logo">MY TASKS</h1>
     </header>
