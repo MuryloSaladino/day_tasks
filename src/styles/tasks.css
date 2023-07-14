@@ -25,14 +25,20 @@
 }
 
 
-.trash{
+.tasks div{
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+
+    display: flex;
+    gap: 10px;
 }
 .trash:hover{
     color: var(--color-red);
+}
+.edit:hover{
+    color: var(--color-yellow);
 }
 
 .priority-level{

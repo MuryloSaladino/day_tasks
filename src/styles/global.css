@@ -37,3 +37,12 @@
 body{
     color: var(--color-grey-7);
 }
+
+dialog{
+    margin: 50px auto;
+    padding: 40px 15px;
+    border-radius: 10px;
+}
+dialog::backdrop{
+    background: rgba(0,0,0,.6);
+}
