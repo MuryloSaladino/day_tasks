@@ -46,7 +46,7 @@ function renderByPriority(priorityArray) {
 }
 
 function deleteTask(id) {
-    taskList = taskList.filter(task => task.id !== id);
+    taskList = taskList.filter(task => task.id != id);
     localStorage.setItem("taskList", JSON.stringify(taskList));
     renderTasks();
 }

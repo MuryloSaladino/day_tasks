@@ -1,5 +1,4 @@
 import { renderTasks, taskList } from "./render.js";
-import { v4 as uuidv4 } from "uuid";
 
 function getPreviousTasks() {
     const previousTasks = JSON.parse(localStorage.getItem("taskList"))
@@ -27,7 +26,7 @@ function formEvents() {
 
 function saveTask(input, textarea, select) {
     let newTask = {
-        id: uuidv4(),
+        id: new Date().getTime(),
         title: input.value,
         priority: Number(select.value),
         description: textarea.value
